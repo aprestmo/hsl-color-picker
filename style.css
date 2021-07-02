@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: "IBM Plex Mono", monospace;
+	margin: 0;
+}
+
+main {
+	background-color: hsl(var(--hue-bg) var(--saturation-bg) var(--lightness-bg));
+	color: hsl(var(--hue-text) var(--saturation-text) var(--lightness-text));
+	display: flex;
+	flex-direction: column;
+	inline-size: 100%;
+	min-block-size: 100vh;
+	padding: 3rem 1rem;
+	place-content: center;
+	place-items: center;
+	row-gap: 3rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: clamp(3rem, 5vw, 4rem);
+	line-height: 1;
+	margin: 0;
+}
+
+p {
+	font-size: clamp(1.125rem, 3vw, 1.25rem);
+	font-weight: 600;
+	margin-block-start: 1rem;
+	margin-inline: auto;
+	max-inline-size: 40ch;
+}
+
+section {
+	column-gap: 4rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+	inline-size: 100%;
+	place-content: center;
+	row-gap: 2rem;
+}
+
+div {
+	display: grid;
+	row-gap: 1rem;
+}
+
+label {
+	font-size: 1.125rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+code {
+	background-color: hsla(0 100% 100% / 0.7);
+	border: 0.3em solid hsla(0 0% 0% / 0.2);
+	border-radius: 1em;
+	color: black;
+	cursor: pointer;
+	display: flex;
+	font-size: 0.9375rem;
+	justify-content: center;
+	margin-block-start: 1rem;
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+}
+
+input {
+	block-size: 3rem;
+}

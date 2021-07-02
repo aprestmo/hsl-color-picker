@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSL Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>HSL Color Picker 💅</h1>
+      <p>Click on the value output to copy CSS</p>
+    </header>
+  
+    <section>
+      <div>
+        <h2>Background Color</h2>
+        <label for="hue-bg">Hue</label>
+        <input id="hue-bg" type="range" min="0" max="360" step="1" value="260">
+  
+        <label for="saturation-bg">Saturation</label>
+        <input id="saturation-bg" type="range" min="0" max="100" step="1" value="70">
+  
+        <label for="lightness-bg">Lightness</label>
+        <input id="lightness-bg" type="range" min="0" max="100" step="1" value="70">
+  
+        <footer>
+          <code>background-color: hsl(0 100% 100%);</code>
+        </footer>
+      </div>
+  
+      <div>
+        <h2>Text Color</h2>
+        <label for="hue-text">Hue</label>
+        <input id="hue-text" type="range" min="0" max="360" step="1" value="65">
+  
+        <label for="saturation-text">Saturation</label>
+        <input id="saturation-text" type="range" min="0" max="100" step="1" value="60">
+  
+        <label for="lightness-text">Lightness</label>
+        <input id="lightness-text" type="range" min="0" max="100" step="1" value="90">
+  
+        <footer>
+          <code>color: hsl(0 0% 0%);</code>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
